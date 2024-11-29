@@ -1,5 +1,5 @@
-/* Overlay for the Forgot Password popup */
-.forgot-password-overlay {
+/* Overlay for the SignUp popup */
+.signup-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,8 +12,8 @@
     z-index: 1000;
   }
   
-  /* Popup for Forgot Password */
-  .forgot-password-popup {
+  /* Popup for SignUp */
+  .signup-popup {
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -22,8 +22,8 @@
     position: relative;
   }
   
-  /* Close button for the Forgot Password popup */
-  .forgot-password-popup .close-btn {
+  /* Close button for the SignUp popup */
+  .signup-popup .close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -34,34 +34,34 @@
   }
   
   /* Heading inside the popup */
-  .forgot-password-popup h2 {
+  .signup-popup h2 {
     margin-top: 0;
     color: #333;
   }
   
   /* Form container */
-  .forgot-password-form {
+  .signup-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
   
   /* Label and input fields */
-  .forgot-password-form label {
+  .signup-form label {
     display: flex;
     flex-direction: column;
     font-size: 14px;
     color: #555;
   }
   
-  .forgot-password-form input {
+  .signup-form input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 5px;
   }
   
-  /* Submit button for sending the password reset email */
+  /* Submit button for creating the account */
   .submit-btn {
     padding: 10px;
     background-color: #5f08d1;
@@ -76,10 +76,33 @@
     background-color: #37047a;
   }
   
-  /* Message display after password reset link is sent */
+  /* Message display after account creation */
   .message {
     margin-top: 15px;
     color: green;
     text-align: center;
   }
+
+  /* Google Sign-Up button container */
+.google-signup-btn-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
   
+  /* Styling for the Register with Google button */
+  .google-signup-btn {
+    padding: 12px;
+    background-color: #db4437;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .google-signup-btn:hover {
+    background-color: #c1351d;
+  }
